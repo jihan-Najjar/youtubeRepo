@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>side_menu</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="nav-side">
+      <a href="#" id="open-menu" onclick="openSlideMenu()">
+        <img
+          src="./images/menu-icon.png"
+          alt="here is image for menu icon"
+          width="30px"
+          height="30px"
+        />
+      </a>
+
+      <ul class="nav-list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="side-menu" class="side-menu">
+      <a href="#" id="close-menu" onclick="closeSlideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      
+      <a href="#">Product</a>
+      <a href="#">Contact</a>
+    </div>
+    <div style="display: flex; border: 3px solid black;">
+        <div id="secondNav" style="  border: 3px solid green;"></div>
+        <div style="  border: 3px solid red;">
+            <h1>Hello</h1>
+            <a href="you.html">hello to you</a>
+        </div>
+    </div>
+
+    <script>
+      function openSlideMenu() {
+        document.getElementById("side-menu").style.width = "250px";
+        document.getElementById("secondNav").style.width = "250px";
+      }
+      function closeSlideMenu() {
+        document.getElementById("side-menu").style.width = "0px";
+        document.getElementById("secondNav").style.width = "0px";
+      }
+    </script>
+  </body>
+</html>
